@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Darshan</title>
+    <link rel="stylesheet" href="new.css" />
+  </head>
+  <body>
+    <!-- Background Audio -->
+    <audio id="background-audio" loop>
+      <source src="song.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <div class="wrap">
+      <h1>For You click in the heart 💖</h1>
+      <div class="postcard1"></div>
+      <div class="postcard">
+        <div class="letter"></div>
+        <p>
+          <span>My beautiful,</span>
+          <br />
+          "Happy Birthday to the most beautiful and strong girls I've ever known! Your smile lights up my world, and your presence brings peace to my heart. You are more than just stunning on the outside—your kindness, strength, and warmth make you truly one of a kind. On your special day, I hope you feel all the love and happiness you give to others, because you deserve nothing less. 💖"
+          And also don't forget what I told you!! Just wait. I will come for you and find you!!
+          <br />
+          <span class="ullu">
+            Forever Yours,
+            <br />
+            King
+          </span>
+        </p>
+        <div class="address"></div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Darshan.</p>
+    </footer>
+
+    <script>
+      // Function to play audio when user interacts with the page
+      function playAudio() {
+        var audio = document.getElementById('background-audio');
+        if (audio.paused) {
+          audio.play();
+        }
+      }
+
+      // Add click and touchstart event listeners to play the audio
+      document.body.addEventListener('click', playAudio);
+      document.body.addEventListener('touchstart', playAudio);
+    </script>
+  </body>
+</html>
